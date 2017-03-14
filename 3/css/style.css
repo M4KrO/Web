@@ -1,0 +1,70 @@
+.clear
+{
+    clear: both;
+}
+
+body
+{
+    width: 100%;
+    margin: 0 auto;
+    background: #edeef0;
+}
+
+.content
+{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.shape_form
+{
+    float: left;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.shape_form select
+{
+    margin: 0 auto;
+    border: 1px solid #CCC;
+    overflow: hidden; 
+    height: 34px;
+    width: 251px;
+}
+
+.shape_form input
+{
+    
+    margin-top: 20px;
+    border: 1px solid #CCC;
+    overflow: hidden; 
+}
+
+.static_input input
+{
+    padding-left: 10px;
+    height: 34px;
+    width: 240px;
+}
+
+canvas
+{
+    background: #fff;
+    float: left;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #CCC;
+    margin-left: 50px; 
+}
+
+#sumbit
+{
+    width: 251px;
+}
+
+.size
+{
+    margin-right: 8px;
+    float: left;
+    width: 30px;
+}
