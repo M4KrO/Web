@@ -85,8 +85,8 @@ function makeText(shape){
 
     ctx.fillStyle = "#00F";
     ctx.font = "10pt Arial";
-    ctx.fillText("perimeter: " + perimeter, 650, 20);
-    ctx.fillText("areaSize: " + areaSize, 650, 40);
+    ctx.fillText("perimeter: " + perimeter, 250, 20);
+    ctx.fillText("areaSize: " + areaSize, 250, 40);
 }
 
 function makeRectangle(){

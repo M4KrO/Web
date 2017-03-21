@@ -10,16 +10,14 @@ body
     background: #edeef0;
 }
 
-.content
+.container
 {
-    margin: 0 auto;
-    width: 1200px;
+    margin-top: 20px;
 }
 
 .shape_form
 {
-    float: left;
-    width: 250px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -29,12 +27,16 @@ body
     border: 1px solid #CCC;
     overflow: hidden; 
     height: 34px;
-    width: 251px;
+    width: 60%;
+}
+
+.form-control
+{
+    margin: 0 auto;
 }
 
 .shape_form input
 {
-    
     margin-top: 20px;
     border: 1px solid #CCC;
     overflow: hidden; 
@@ -42,29 +44,31 @@ body
 
 .static_input input
 {
-    padding-left: 10px;
     height: 34px;
-    width: 240px;
+    width: 60%;
 }
 
 canvas
 {
     background: #fff;
-    float: left;
     display: block;
     margin: 0 auto;
     border: 1px solid #CCC;
-    margin-left: 50px; 
 }
 
-#sumbit
+@media (min-width: @screen-sm-min) 
 {
-    width: 251px;
+    
 }
 
-.size
+
+@media (min-width: @screen-md-min) 
 {
-    margin-right: 8px;
-    float: left;
-    width: 30px;
+
+}
+
+
+@media (min-width: @screen-lg-min) 
+{
+
 }

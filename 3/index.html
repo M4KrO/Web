@@ -3,36 +3,45 @@
 <head>
 	<title></title>
 	<link href="css/style.css" rel="stylesheet">
-
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
 
-	<div class="content">
-		<form class="shape_form" name="form">
+	<div class="container">
+		<div class="row">
+			<div class="bg1 col-xs-6 col-md-4">
+				<form class="shape_form" name="form">
 
-			<select id="shapes" onchange="change()">
-				<option value="0" disabled selected>Shapes</option>
-				<option value="1">Triangle</option>
-				<option value="2">Circle</option>
-				<option value="3">Rectangle</option>
-			</select>
-	
-			<div class="static_input">
-				<input id="color" type="text" placeholder="Color" onchange="changeVal()">
-				<input id="border_color" type="text" placeholder="Border color" onchange="changeVal()">
-				<input id="radius" type="text" placeholder="Radius" onchange="changeVal()">
-				<input id="x1" type="text" placeholder="X1" onchange="changeVal()">
-				<input id="y1" type="text" placeholder="Y1" onchange="changeVal()">
-				<input id="x2" type="text" placeholder="X2" onchange="changeVal()">
-				<input id="y2" type="text" placeholder="Y2" onchange="changeVal()">
-				<input id="x3" type="text" placeholder="X3" onchange="changeVal()">
-				<input id="y3" type="text" placeholder="Y3" onchange="changeVal()">
-			</div>
+					<select class="form-control" id="shapes" onchange="change()">
+						<option value="0" disabled selected>Shapes</option>
+						<option value="1">Triangle</option>
+						<option value="2">Circle</option>
+						<option value="3">Rectangle</option>
+					</select>
 			
-		</form>
+					<div class="static_input">
+						<input class="form-control" id="color" type="text" placeholder="Color" onchange="changeVal()">
+						<input class="form-control" id="border_color" type="text" placeholder="Border color" onchange="changeVal()">
+						<input class="form-control" id="radius" type="text" placeholder="Radius" onchange="changeVal()">
+						<input class="form-control" id="x1" type="text" placeholder="X1" onchange="changeVal()">
+						<input class="form-control" id="y1" type="text" placeholder="Y1" onchange="changeVal()">
+						<input class="form-control" id="x2" type="text" placeholder="X2" onchange="changeVal()">
+						<input class="form-control" id="y2" type="text" placeholder="Y2" onchange="changeVal()">
+						<input class="form-control" id="x3" type="text" placeholder="X3" onchange="changeVal()">
+						<input class="form-control" id="y3" type="text" placeholder="Y3" onchange="changeVal()">
+					</div>
+			
+				</form>
+			</div>
+
+  			<div class="bg col-xs-12 col-sm-6 col-md-8">
+				<canvas height ='500px' width='500px' id='canvasArea'></canvas>
+  			</div>
+		</div>
+		
 	
-		<canvas height='550' width='840' id='canvasArea'></canvas>
-		<div class="clear"></div>
+		
+		
 	</div>
 	
 	

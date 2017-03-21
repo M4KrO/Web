@@ -1,0 +1,27 @@
+{
+  "name": "3",
+  "version": "1.0.0",
+  "description": "(third_lab)",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M4KrO/Web.git"
+  },
+  "keywords": [
+    "3"
+  ],
+  "author": "heroborn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M4KrO/Web/issues"
+  },
+  "homepage": "https://github.com/M4KrO/Web#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {}
+}
