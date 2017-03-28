@@ -39,7 +39,7 @@ module.exports = function(grunt)
                 files: {
                     'build/styles.min.css': [
                         'node_modules/bootstrap/dist/css/bootstrap.min.css',
-                        'css/main.css'
+                        'css/style.css'
                     ]
                 }
             }
