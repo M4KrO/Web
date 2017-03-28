@@ -1,27 +1,21 @@
 {
-  "name": "3",
+  "name": "shapes",
   "version": "1.0.0",
-  "description": "(third_lab)",
-  "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/M4KrO/Web.git"
-  },
-  "keywords": [
-    "3"
-  ],
-  "author": "heroborn",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/M4KrO/Web/issues"
-  },
-  "homepage": "https://github.com/M4KrO/Web#readme",
-  "dependencies": {
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "eslint": "^3.17.1",
     "grunt": "^1.0.1",
-    "bootstrap": "^3.3.7"
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-uglify": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^19.0.0",
+    "grunt-file-hash": "^0.1.6",
+    "grunt-hashres": "^0.4.1",
+    "grunt-open": "^0.2.3"
   },
-  "devDependencies": {}
+  "scripts": {
+    "start": "grunt"
+  }
 }
