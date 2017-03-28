@@ -90,7 +90,7 @@ function makeText(shape){
 }
 
 function makeRectangle(){
-    rectangle = new Rectangle();
+    var rectangle = new Rectangle();
     rectangle.x1 = document.getElementById("x1").value;
     rectangle.y1 = document.getElementById("y1").value;
     rectangle.x2 = document.getElementById("x2").value;
@@ -102,7 +102,7 @@ function makeRectangle(){
 }
 
 function makeTriangle(){
-    triangle = new Triangle();
+    var triangle = new Triangle();
     triangle.x1 = document.getElementById("x1").value;
     triangle.y1 = document.getElementById("y1").value;
     triangle.x2 = document.getElementById("x2").value;
@@ -116,7 +116,7 @@ function makeTriangle(){
 }
 
 function makeCircle(){
-    circle = new Circle();
+    var circle = new Circle();
     circle.centerX = document.getElementById("x1").value;
     circle.centerY = document.getElementById("y1").value;
     circle.radius = document.getElementById("radius").value;
@@ -133,15 +133,15 @@ function change(){
     clearFields();
     removeFields();
     if(value === shapes.Rectangle.value){
-        rectangle = new Rectangle();
+        var rectangle = new Rectangle();
         rectangle.draw();
         makeText(rectangle);
     } else if (value === shapes.Triangle.value){
-        triangle = new Triangle();
+        var triangle = new Triangle();
         triangle.draw();
         makeText(triangle);
     } else if (value === shapes.Circle.value){
-        circle = new Circle();
+        var circle = new Circle();
         circle.draw();
         makeText(circle);
     }
