@@ -7,10 +7,9 @@ module.exports = function(grunt)
             server: {
                 options: {
                     port: 8080,
+					hostname: 'localhost',
                     base: '',
-                    open: {
-                        appName: 'Chrome'
-                    }
+                    open: true
                 }
             }
         },
@@ -18,14 +17,14 @@ module.exports = function(grunt)
         concat: {
             dist: {
                 src: ['js/**/*.js'],
-                dest: 'build/scripts.js'
+                dest: 'js/script.js'
             }
         },
 
         uglify: {
             build: {
-                src: 'build/scripts.js',
-                dest: 'build/scripts.min.js'
+                src: 'js/script.js',
+                dest: 'build/scripts.js'
             }
         },
 
@@ -37,7 +36,7 @@ module.exports = function(grunt)
 
             target: {
                 files: {
-                    'build/styles.min.css': [
+                    'build/styles.css': [
                         'node_modules/bootstrap/dist/css/bootstrap.min.css',
                         'css/style.css'
                     ]
@@ -46,7 +45,7 @@ module.exports = function(grunt)
         },
 
         eslint: {
-            target: ['build/scripts.js']
+            target: ['build/script.js']
         },
 
         hashres: {
@@ -56,8 +55,8 @@ module.exports = function(grunt)
 
             prod: {
                 src: [
-                    'build/scripts.min.js',
-                    'build/styles.min.css'
+                    'build/scripts.js',
+                    'build/styles.css'
                 ],
 
                 dest: ['index.html']
@@ -83,30 +82,16 @@ module.exports = function(grunt)
                 options: {livereload: true}
             }
         },
+	});
 
-        open: {
-            dev: {
-                path: 'http://localhost:8080/index.html'
-            }
-        }
-    });
-
-    grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-contrib-watch');  
     grunt.loadNpmTasks('grunt-hashres');
     grunt.loadNpmTasks('grunt-eslint');
     grunt.loadNpmTasks('grunt-open');
 
-    grunt.registerTask('default', [
-            'concat',
-            'uglify',
-            'cssmin',
-            'eslint',
-            'hashres:prod',
-            'connect:server',
-            'watch'
-]);
+    grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'eslint', 'hashres:prod', 'connect:server', 'watch']);
 };
