@@ -50,25 +50,8 @@ body
 
 canvas
 {
-    background: #fff;
+    background: #000;
     display: block;
     margin: 0 auto;
     border: 1px solid #CCC;
-}
-
-@media (min-width: @screen-sm-min) 
-{
-    
-}
-
-
-@media (min-width: @screen-md-min) 
-{
-
-}
-
-
-@media (min-width: @screen-lg-min) 
-{
-
 }

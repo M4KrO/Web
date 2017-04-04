@@ -6,9 +6,6 @@ module.exports = function(grunt)
         connect: {
             server: {
                 options: {
-                    port: 8080,
-					hostname: 'localhost',
-                    base: '',
                     open: true
                 }
             }
@@ -66,21 +63,21 @@ module.exports = function(grunt)
         watch: {
 
             css: {
+                options: {livereload: true},
                 files: ['css/**/*.*'],
-                tasks: ['cssmin', 'hashres:prod'],
-                options: {livereload: true}
+                tasks: ['cssmin', 'hashres:prod'], 
             },
 
             scripts: {
+                options: {livereload: true},
                 files: ['js/**/*.*'],
                 tasks: ['concat', 'uglify', 'eslint', 'hashres:prod'],
-                options: {livereload: true}
             },
 
             html: {
+                options: {livereload: true},
                 files: ['*.html'],
-                options: {livereload: true}
-            }
+            },
         },
 	});
 
